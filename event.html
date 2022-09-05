@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calc</title>
+
+</head>
+<body>
+    
+    <input type="text" id="data" onblur="multiply()">*<input type="text" id="data2" onblur="multiply()">=<input type="text" id="result">
+</body>
+
+<script>
+
+function multiply() {
+  var x = parseInt(document.getElementById("data").value);
+  var y = parseInt(document.getElementById("data2").value)
+  document.getElementById("result").value = x * y;
+}
+
+
+    
+
+</script>
+
+</html>
